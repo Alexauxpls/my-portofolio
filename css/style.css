@@ -14,13 +14,6 @@
     list-style: none;
   }
   
-  body .services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 50vh;
-  }
   /* Contenu de la page */
   
   .tltName{
@@ -46,6 +39,7 @@
   
   .banner img{
     border-radius: 400px;
+    box-shadow: 40px 35px 50px  #bcb8b1
     
   }
   
@@ -139,7 +133,7 @@
   }
   
   header.sticky{
-    background-color:#4281a4;
+    background-color:#c1666b;
     padding: 20px 100px;
   }
   header.sticky .logo{
@@ -147,6 +141,12 @@
   }
   header.sticky ul li a{
     color: #000;
+  }
+  header.sticky .logo:hover{
+    color: #e4dfda;
+  }
+  .logo:hover{
+    color: #e4dfda;
   }
   
   header .logo{
@@ -180,17 +180,12 @@
   }
   
   header ul li a:hover{
-    color: #03045e;
+    color: #e4dfda;
   }
   
-  .heading{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #111;
-  }
   
   .heading h2{
+    text-align: center;
     font-weight: 600;
     font-size: 45px;
   }
@@ -230,7 +225,7 @@
     font-size: 20px;
   }
 
-   
+
   .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
@@ -302,48 +297,37 @@
   .skills .skills-content .right  .flp::before{
       width: 60%;
   }
+  .skills .skills-content .right  .eng::before{
+    width: 65%;
+}
+.skills .skills-content .right  .esp::before{
+  width: 50%;
+}
   
   
   .services{
     background:burlywood;
-    z-index: -100000;
   } 
   .services h2{
     color: #1c1f29;
   }
-  .box{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    display: flex;
+  .services .heading ul li a{
     justify-content: center;
     align-items: center;
-    margin: 40px;
-    background:#060c21;
-    transition: 0.5s;
-    z-index: 100;
+    font-size: 30px;
+    color: #dd0202;
+    min-height: 6vh;
   }
-
-  
-  .box .contentImg h2{
-    font-size: 20px;
-    color: #000;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 1px;
+  .span_hobbies{
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #0e0d49;
+    min-height: 6vh;
   }
-  .box .contentImg h2 .tltC{
-    font-size: 14px;
-    color: #000;
-    font-weight: 200;
-    line-height: 20px;
-    letter-spacing: 1px;
-  }
-  
-  
-  
+ 
   .letterT{
-    color: #48cae4;
+    color: #4281a4;
   }
 
   /*Bas de page (Mes reseaux)*/
@@ -358,7 +342,7 @@ footer {
 }
 
 #contenu_footer {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -375,6 +359,8 @@ footer {
 .footer_medias h3 {
   font-size: 25px;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -387,15 +373,31 @@ footer {
 }
 
 .span_service:hover {
-  color: lightseagreen;
+  color: #4281a4;
 }
 
 .container_media {
-  text-align: left;
+  display: flex;
+  justify-content: center;
 }
 
 .container_media img {
   align-items: center;
   padding-right: 20px;
 
+}
+@media (max-width: 1080px) {
+  .body {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .body {
+    width: 500px;
+  }
+}
+@media (max-width: 360px) {
+  .body {
+    width: 300px;
+  }
 }
