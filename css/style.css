@@ -257,6 +257,9 @@
     padding-right: 30px;
   }
   
+  .w50{
+    min-width: 50%; 
+  }
   .content img{
     font-size: 1.5vw;
     border-radius: 20px;
