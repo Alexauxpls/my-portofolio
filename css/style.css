@@ -102,20 +102,77 @@
   }
   .btn{
     position: relative;
-    background: #e5383b;
+    font-size: 30px;
     display: inline-block;
-    color: #fff;
-    margin-top: 20px;
     padding: 10px 30px;
-    font-size: 18px;
-    text-transform: uppercase;
+    border: 2px solid #e5383b;
+    margin-top: 20px;
+    margin: 40px;
     text-decoration: none;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #1a759f;
+    transition: 0.5s;
   }
   .btn:hover{
-    opacity: 0.8;
+    color: burlywood;
+    transition-delay: 1.5s; 
+    color: #1c1f29;
   }
+  .btn:nth-child(2){
+    filter: hue-rotate(80deg);
+  }
+  .btn::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #e5383b;
+    box-shadow: 5px -8px 0px #e5383b,
+                5px 8px 0px #e5383b;
+    transition: widht 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s; 
+    transition-delay: 1s,0.5s,0s,0s;           
+  }
+  .btn:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0px 0px #e5383b,
+                5px 0px 0px #e5383b;
+    transition-delay: 0s,0.5s,1s,1s; 
+  }
+    
+  .btn::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #e5383b;
+    box-shadow: -5px -8px 0px #e5383b,
+                -5px 8px 0px #e5383b;
+    transition: widht 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s; 
+    transition-delay: 1s,0.5s,0s,0s;           
+    }
+  .btn:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0px 0px #e5383b,
+                -5px 0px 0px #e5383b;
+    transition-delay: 0s,0.5s,1s,1s;  
+  }
+  .btn span{
+    position: relative;
+    z-index: 100;
+  }
+  
   
   /* header */
   
@@ -200,9 +257,6 @@
     padding-right: 30px;
   }
   
-  .w50{
-    min-width: 50%; 
-  }
   .content img{
     font-size: 1.5vw;
     border-radius: 20px;
@@ -388,16 +442,16 @@ footer {
 }
 @media (max-width: 1080px) {
   .body {
-    width: 700px;
+    display: flex;
   }
 }
 @media (max-width: 720px) {
   .body {
-    width: 500px;
+    display: flex;
   }
 }
 @media (max-width: 360px) {
   .body {
-    width: 300px;
+    display: flex;
   }
 }
