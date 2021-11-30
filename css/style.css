@@ -105,7 +105,7 @@
     font-size: 30px;
     display: inline-block;
     padding: 10px 30px;
-    border: 2px solid #e5383b;
+    border: 5px solid #e5383b;
     margin-top: 20px;
     margin: 40px;
     text-decoration: none;
@@ -141,8 +141,8 @@
     width: 60%;
     height: 100%;
     left: -2px;
-    box-shadow: 5px 0px 0px #e5383b,
-                5px 0px 0px #e5383b;
+    box-shadow: 8px 0px 0px #e5383b,
+                8px 0px 0px #e5383b;
     transition-delay: 0s,0.5s,1s,1s; 
   }
     
@@ -155,8 +155,8 @@
     width: 20px;
     height: 2px;
     background: #e5383b;
-    box-shadow: -5px -8px 0px #e5383b,
-                -5px 8px 0px #e5383b;
+    box-shadow: -8px -8px 0px #e5383b,
+                -8px 8px 0px #e5383b;
     transition: widht 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s; 
     transition-delay: 1s,0.5s,0s,0s;           
     }
