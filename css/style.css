@@ -369,18 +369,23 @@
     color: #1c1f29;
   }
   .services .heading ul li a{
-    justify-content: center;
+    margin-top: 20px;
+    position: relative;
     align-items: center;
-    font-size: 30px;
-    color: #dd0202;
+    margin-left: 45%;
+    font-size: 45px;
     min-height: 6vh;
   }
   .span_hobbies{
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    color: #0e0d49;
+    color: #3F7CAC;
     min-height: 6vh;
+  }
+  .services .heading ion-icon{
+    font-size: 45px;
+    color: rgb(17, 16, 16);
   }
  
   .letterT{
