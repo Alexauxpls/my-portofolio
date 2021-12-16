@@ -7,37 +7,52 @@
     <title>Alexandre's website</title>
     <link rel="stylesheet" href="css/style.css">  
 </head>
+
 <body>
     <script type="text/javascript" src="script.js"></script>
     <header class="main_header">
-            <a href="" class="logo">Alex_AUXP</span></a>
-            <div class="toggle"></div>
-            <ul>
-                <li><a href="#My hobbies">My hobbies</a></li>
-                <li><a href="#My Skills">My Skills</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
-            </ul>
+        <a href="" class="logo">Alex_AUXP</span></a>
     </header>
-
-    <section class="banner">
-     <div class="textBx">
-         <h2 class="tltName"><span class="auto-input"></span></h2>
-         <h3>I'm a futur manager & project supervisor</h3>
-         <a href="#about" class="btn"><span>About Me</span></a>
-     </div>
-    <img src="img/photodemoi.jpg.jpg" alt="photodemoi" style="max-width:100%" height:auto >
-    </section>
-    
-    <div class="wlcm">
-      <span class="text1">Welcome to</span>
-      <span class="text2">My WebSite</span>
+<section class="banner">
+    <div class="containerMn">
+        <input type="checkbox" name="" id="menuBtn">
+        <div class="menu_overlay">
+          <label for="menuBtn">
+            <i class="fas fa-times"></i>
+          </label>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#My hobbies">Hobbies</a></li>
+            <li><a href="#My Skills">My skills</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu_annimation">
+          <div class="menu">
+            <label for="menuBtn">
+              <i class="fas fa-bars"></i>
+            </label>
+          </div>
+      </div>
+    <div class="disappear">
+        <span>W</span> <span>E</span> <span>L</span> <span>C</span> <span>O</span> <span>M</span> <span>e</span> 
     </div>
-
+    <div class="textBx">
+        <h2 class="tltName"><span class="auto-input"></span></h2>
+        <h3>I'm a futur manager & project supervisor</h3> 
+        <div class="btn">
+          <a href="#about"><span>About Me</span></a>
+        </div>  
+    </div>
+    <img src="img/photodemoi.jpg.jpg" alt="photodemoi" height:auto >
+</section>
+ 
 <section class="about" id="about">
     <div class="heading">
         <h2><span class="letterT">A</span>bout Me</h2>
     </div>
-    <div class="content">
+    <div class="contentme">
         <div class="contentBx w50">
             <h3>I'm a freshman at business school De Vinci</h3>
             <p>Hi ! I'm Alexandre I'm french and I'm 18 years old and I study at EMLV, a business school based in La Defense, Paris. I learn business, marketing, management, finance and even digital skills but we will focus on that later.<br></p> 
@@ -45,7 +60,15 @@
             <p>I don't have much professional experience,I just did a 2 weeks internship in a mobile application development company called <span class="itc">IsCool Entertainment</span>.</p>
         </div>
         <div class="w50">
-            <img src="https://www.emlv.fr/wordpress/wp-content/uploads/2020/06/Le-P%C3%B4le-FNEGE-BSIS-650x380.jpg" class="emlv" style="max-width:100%" height:auto>
+            <div class="cardlv">
+                <div class="circle"></div>
+                <div class="content">
+                    <h2>L'EMLV</h2>
+                    <p>The Leonard de Vinci School of Management is located in La Défense, the 3rd best post-baccalaureate business school with 14 national and international accreditations.</p>
+                    <a href="https://www.emlv.fr/a-propos/">My school</a>
+                </div>
+                <img src="https://www.emlv.fr/wordpress/wp-content/uploads/2020/06/Le-P%C3%B4le-FNEGE-BSIS-650x380.jpg" target="_blank">
+            </div>
         </div>
     </div>
 </section>
@@ -53,14 +76,50 @@
 <section class="services" id="My hobbies">
     <div class="heading">
         <h2>My <span class="letterT">H</span>obbies</h2><br>
-        <ul>
-            <li><a href=""></a><ion-icon name="book-outline"></ion-icon> <span class="span_hobbies">Manga & Science fiction novels</span></li>
-            <li><a href=""></a><ion-icon name="game-controller-outline"></ion-icon> <span class="span_hobbies">Video Games</span></li>
-            <li><a href=""></a><ion-icon name="hardware-chip-outline"></ion-icon> <span class="span_hobbies">Hardware</span></li>
-            <li><a href=""></a><ion-icon name="football-outline"></ion-icon> <span class="span_hobbies">Soccer</span></li>
-            <li><a href=""></a><ion-icon name="airplane-outline"></ion-icon> <span class="span_hobbies">Travel</span></li>
-            <li><a href=""></a><ion-icon name="cash-outline"></ion-icon> <span class="span_hobbies">economics & finance</span></li>
-        </ul>
+        <div class="containerhb">
+            <div class="card">
+                <div class="contenthb">
+                    <img src="img/book.png">
+                    <h3>Manga</h3>
+                    <p>Lorem ipsum dolor sit amet. In recusandae minus ea earum velit eum dolor laboriosam ad maiores galisum quo dolores cumque qui doloremque ratione. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenthb">
+                    <img src="img/ball.png">
+                    <h3>Soccer</h3>
+                    <p>Lorem ipsum dolor sit amet. In recusandae minus ea earum velit eum dolor laboriosam ad maiores galisum quo dolores cumque qui doloremque ratione. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenthb">
+                    <img src="img/travel.png">
+                    <h3>Travel</h3>
+                    <p>Lorem ipsum dolor sit amet. In recusandae minus ea earum velit eum dolor laboriosam ad maiores galisum quo dolores cumque qui doloremque ratione. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenthb">
+                    <img src="img/hardware.png">
+                    <h3>Hardware</h3>
+                    <p>Lorem ipsum dolor sit amet. In recusandae minus ea earum velit eum dolor laboriosam ad maiores galisum quo dolores cumque qui doloremque ratione. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenthb">
+                    <img src="img/controller.png">
+                    <h3>Video Games</h3>
+                    <p>Lorem ipsum dolor sit amet. In recusandae minus ea earum velit eum dolor laboriosam ad maiores galisum quo dolores cumque qui doloremque ratione. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenthb">
+                    <img src="img/finance.png">
+                    <h3>Economics & finance</h3>
+                    <p>Lorem ipsum dolor sit amet. In recusandae minus ea earum velit eum dolor laboriosam ad maiores galisum quo dolores cumque qui doloremque ratione. </p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -78,6 +137,7 @@
                 <p>Finally, my studies in a business school taught me to develop economic skills like finance, management but I'm particularly comfortable in marketing.</p>
                 <p>Business school also taught me to develop my soft-skills, i.e. my speaking skills, knowing how to put forward my personality and develop my critical mind.</p>
             </div>
+        
          <div class="column right">
                 <div class="bars">
                     <div class="info">
@@ -131,32 +191,42 @@
         </div>
     </div>
             </div>
- </section>
-  <footer>
+</section>
+<footer>
     <div id="contenu_footer">
-         <div class="bloc footer_medias">
+        <div class="bloc footer_medias">
             <h3>Mes Réseaux Sociaux</h3>
-            <div class="container_media">
+            <div class="media">
+                <div class="color"></div>
                 <ul>
-                    <li><a href="https://www.facebook.com/arcadyrecordsnovelty/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="icones réseaux sociaux" height="20"><span class="span_service">Facebook</span></a></li>
-                    <li><a href="https://twitter.com/axpl_d" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="icones réseaux sociaux" height="20"><span class="span_service">Twitter</span></a></li>
-                    <li><a href="https://www.instagram.com/a_axpls/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="icones réseaux sociaux" height="20"><span class="span_service">Instagram</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/alexandre-auxepaules-08791b220" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="icones réseaux sociaux" height="20"><span class="span_service">Linkdedin</span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCmdpMMO1SfyLijLIjJ8rHoQ" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="icones réseaux sociaux" height="20"><span class="span_service">Youtube</span></a></li>
+                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/invites/contact/?i=za30hmjkrdld&utm_content=3qhjs9h" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/axpl_d" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandre-auxepaules-08791b220/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                 </ul>
             </div>
         </div>
-     </div>
-  </footer>
+    </div>
+</footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
 <script>
     var typed = new Typed(".auto-input", {
-        strings: ["I'm Alexandre Auxepaules", "Welcome to my portfolio", "Let's discover together"],
+        strings: ["I'm Alexandre Auxepaules", "That my Portfolio", "Let's discover together :)"],
         typeSpeed: 100,
         backSpeed: 100,
     })
 </script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 1,
+});
+</script> 
 </body>
 </html>
