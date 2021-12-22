@@ -41,7 +41,7 @@ ul {
   transition: transform 0.5s ease;
 }
 .menu_overlay .fas {
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 20px;
   transition: all 0.3s ease;
@@ -52,18 +52,18 @@ ul {
 }
 .menu_overlay ul {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .menu_overlay ul li {
   list-style: none;
-  margin: 40px;
+  margin: 60px;
 }
 .menu_overlay ul li a {
   color: aliceblue;
+  top: 55px;
   display: block;
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   padding: 0.6rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -74,6 +74,7 @@ ul {
 }
 #menuBtn {
   display: none;
+  position: fixed;
 }
 #menuBtn:checked ~ .menu_overlay {
   transform: translateX(0);
@@ -106,7 +107,7 @@ ul {
 }
 
 section {
-  padding: 140px 50px;
+  padding: 140px 70px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   gap: 0px;
@@ -149,7 +150,7 @@ section {
 }
 .disappear {
   position: absolute;
-  left: 0;
+  left: 200px;
   right: 0;
   margin: auto;
   width: 100%;
@@ -321,8 +322,8 @@ header .logo {
 
 .heading h2 {
   text-align: center;
-  font-weight: 600;
-  font-size: 40px;
+  font-weight: 900;
+  font-size: 2vw;
 }
 
 .containerhb {
@@ -496,7 +497,7 @@ header .logo {
 }
 .containerdl {
   position: relative;
-  top: 400px;
+  top: 350px;
   right: 700px;
 }
 .button.dark {
@@ -808,59 +809,70 @@ header .logo {
   color: #4281a4;
 }
 
-.Floating {
-  padding: 20px;
-  margin-top: 5px;
-  color: #222;
+.fltlogo {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  overflow: hidden;
 }
 
 .tilt {
-  animation: tilting 10s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: tilting 10s cubic-bezier(0.17, 0, 0.34, 0.8) infinite;
 }
 
-section .flt {
+.fltlogo span {
   transition: font-weight 0.4s ease-in;
   animation: floating-secondary 2.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
 
-section .flt:nth-child(1) {
+.fltlogo span:nth-child(1) {
   animation-delay: 1s;
 }
-section .flt:nth-child(2) {
+.fltlogo span:nth-child(2) {
   animation-delay: 2s;
 }
-section .flt:nth-child(3) {
+.fltlogo span:nth-child(3) {
   animation-delay: 3s;
 }
-section .flt:nth-child(4) {
+.fltlogo span:nth-child(4) {
   animation-delay: 4s;
 }
-section .flt:nth-child(5) {
+.fltlogo span:nth-child(5) {
   animation-delay: 5s;
 }
-section .flt:nth-child(6) {
+.fltlogo span:nth-child(6) {
   animation-delay: 6s;
 }
-section .flt:nth-child(7) {
+.fltlogo span:nth-child(7) {
+  animation-delay: 6.5s;
+}
+.fltlogo span:nth-child(8) {
   animation-delay: 7s;
 }
-section .flt:nth-child(8) {
-  animation-delay: 8s;
+fltlogo span:nth-child(9) {
+  animation-delay: 7.3s;
 }
-
-section .flt:hover {
-  font-weight: 100;
+fltlogo span:nth-child(10) {
+  animation-delay: 7.9s;
 }
-.p {
-  opacity: 0;
+.fltlogo span:hover {
+  font-weight: 80;
+  opacity: 0.8;
+}
+.space {
+  visibility: hidden;
 }
 @keyframes floating {
   0% {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(0, 5vh);
+    transform: translate(0, 2vh);
   }
   100% {
     transform: translate(0, 0);
@@ -872,7 +884,7 @@ section .flt:hover {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(0, 1vh);
+    transform: translate(0, 0.6vh);
   }
   100% {
     transform: translate(0, 0);
@@ -1033,4 +1045,3 @@ section .flt:hover {
     margin: 12px;
   }
 }
-
