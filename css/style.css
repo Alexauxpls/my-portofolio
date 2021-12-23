@@ -57,7 +57,7 @@ ul {
 }
 .menu_overlay ul li {
   list-style: none;
-  margin: 45px;
+  margin: 60px;
 }
 .menu_overlay ul li a {
   color: aliceblue;
@@ -349,7 +349,7 @@ header .logo {
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  /*backdrop-filter: blur(5px);*/
 }
 .containerhb .card .contenthb {
   padding: 20px;
@@ -497,8 +497,8 @@ header .logo {
 }
 .containerdl {
   position: relative;
-  top: 370px;
-  right: 620px;
+  top: 390px;
+  right: 500px;
 }
 .button.dark {
   --background: #e76f51;
@@ -518,7 +518,11 @@ header .logo {
   background: var(--background); /* Changer la couleur de la partie gauche*/
   border-radius: 8px;
 }
-
+.travels a{
+  position: absolute;
+  font-size: 35px;
+  font-weight: 200;
+}
 .button ul {
   margin: 0;
   padding: 16px 40px;
@@ -824,7 +828,9 @@ header .logo {
   align-items: center;
   animation: tilting 10s cubic-bezier(0.17, 0, 0.34, 0.8) infinite;
 }
-
+.space {
+  visibility: hidden;
+}
 .fltlogo span {
   transition: font-weight 0.4s ease-in;
   animation: floating-secondary 2.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
