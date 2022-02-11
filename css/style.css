@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Zen+Kaku+Gothic+Antique&display=swap%27");
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Open+Sans+Condensed:wght@300&display=swap');
 @import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
 * {
   margin: 0;
@@ -530,11 +532,6 @@ header .logo {
   background: var(--background); /* Changer la couleur de la partie gauche*/
   border-radius: 8px;
 }
-.travels a {
-  position: absolute;
-  font-size: 35px;
-  font-weight: 200;
-}
 
 .button ul {
   margin: 0;
@@ -720,6 +717,9 @@ header .logo {
 }
 
 /* section voyages*/
+.travels{
+  padding: 160px 80px;
+}
 
 .placement{
   display: flex;
@@ -862,10 +862,12 @@ header .logo {
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
 }
 .options .option .label .info .main {
-  font-weight: bold;
+  font-family: 'Lora', serif;
   font-size: 1.2rem;
 }
 .options .option .label .info .sub {
+  font-family: 'Lora', serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   transition-delay: 0.1s;
 }
 
